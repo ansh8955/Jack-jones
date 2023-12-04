@@ -169,7 +169,7 @@ margin-right: 6rem;
     width: 100%;
     height: auto;
     padding: 2rem 4rem;
-    background-color: #002855;;
+    background-color: #002855;
 }
 .video video{
     width: 90%;
@@ -221,8 +221,13 @@ margin-left: 6rem;
     height: auto;
    
 }
+.footer hr{
+    width: 90%;
+    margin-left:4rem ;
+    margin-top: 1rem;
+}
 
-.heading-footer{
+.heading-footer {
 margin-left: 1rem;
 }
 
@@ -234,17 +239,24 @@ margin-left: 1rem;
     padding:1rem;
     
 }
+.para a{
+    color: blue;
+    text-decoration: none;
+
+}
 
 
 .para{
     color: white;
     font-size: 13px;
-    overflow: scroll;
+    overflow-y: scroll;
     width: 100vw;
     height: 20vh;
     padding: 2rem;
    
+   
 }
+
 
 .para ol{
     padding: 1rem;
@@ -252,4 +264,63 @@ margin-left: 1rem;
 
 .para ol li{
     padding: 0.2rem;
+}
+
+
+.para h2{
+    padding-bottom: 1rem;
+    
+}
+
+.para p{
+    margin-bottom: 1rem;
+}
+.footer .list{
+    margin-top: 1rem;
+    height: auto;
+    width: 100%;
+    background-color:rgb(0,40,85);
+    display: flex;
+}
+
+.footer .list .social-icon-bar{
+    width: 20%;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    background-color:rgb(0,40,85);
+    padding: 0.5rem;
+    height: 8rem;
+display: flex;
+flex-direction: row;
+}
+.footer .list .social-icon-bar div{
+    width: 5%;
+    height: auto;
+    margin: 1rem;
+}
+.footer .list .social-icon-bar div p{
+    color: #fff;
+    margin:0 4rem;
+
+}
+
+.list-items{
+    display: flex;
+    background-color:rgb(0,40,85);
+}
+
+.list-items .items{
+    width: 25%;
+    height: auto;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.list-items .items p{
+    width:10rem;
+    padding: 5%;
+    font-size: 11px;
+    margin: 5%;
+    color: #fff;
+
 }
