@@ -13,6 +13,9 @@
   .d-flex {
     display: flex;
   }
+  .main-content{
+    margin-top: 1.2rem !important;
+  }
   .text-center{
       text-align: center;
   }
@@ -40,6 +43,7 @@
     width: 79%;
     margin-left: auto;
      margin-top: 1rem;
+     z-index: -9999;
   }
   .category-name {
     font-weight: 400;
@@ -97,6 +101,7 @@
       margin: 6px 0px;
   }
   .product-name{
+    display: block;
       color: #002855;
       font-size: 15px;
       font-weight: 300;
@@ -135,9 +140,7 @@
       margin-bottom: 10px;
   }
   
-  .visible-on-hover{
-      display: none;
-  }
+ 
   .chatbot{
       width: 60px;
       border-radius: 50%;
@@ -151,7 +154,12 @@
   }
   #side-menu{
     width: 20%;
+    position: relative;
   
+  }
+  .accordion{
+    position: sticky !important;
+    top: 13rem;
   }
   .accordion-button{
     font-size: 15px !important;
@@ -219,4 +227,49 @@
     font-weight: 700;
     cursor: pointer;
   }
-  
+  .visible-on-hover{
+    display: none !important;
+}
+  .product-img:hover .visible-on-hover{
+         display: block !important;
+  }
+  .product-img:hover .hide-on-hover{
+    display: none !important;
+}
+.product:hover{
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 1px 5px 1px #e2e2e2;
+    cursor: pointer;
+}
+.product:hover .add-to-card{
+    display: block;
+    border-top: 1px solid #e2e2e2;
+    position: relative;
+    padding: 4px;
+    background: #faf9f8;
+}
+
+.add-to-card{
+    display: none;
+}
+.product:hover .product-name{
+    display: none;
+}
+.wishlist{
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-left:  1px solid #e2e2e2;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    background: none;
+    top: 3px;
+    text-align: center;
+}
+.add-to-card span{
+    font-size: 15px ;
+    color: #002855;
+}
