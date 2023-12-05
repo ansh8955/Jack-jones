@@ -273,3 +273,65 @@
     font-size: 15px ;
     color: #002855;
 }
+
+
+
+
+
+@media screen and (max-width: 780px) {
+  #side-menu{
+    display: none;
+  }
+  #products-section{
+    width: 100%;
+    margin: auto;
+  }
+  .hide-on-tab{
+    display: none;
+  }
+  .jeans{
+    width: 32.5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hide-on-phone{
+    display: none;
+  }
+  .jeans{
+    width: 49%;
+  }
+  .sort-filter{
+    display: none;
+  }
+  .product{
+    width: 49%;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 1px 5px 1px #e2e2e2;
+  }
+  .add-to-card{
+    /* display: block; */
+    border-top: 1px solid #e2e2e2;
+    /* position: relative;
+    padding: 4px; */
+    background: #faf9f8;
+    display: flex;
+    padding: 0px 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 30px;
+  }
+
+  .add-to-card span, .product-name, .new-price, .old-price, .sale {
+    font-size: 12px;
+   
+}
+
+}
