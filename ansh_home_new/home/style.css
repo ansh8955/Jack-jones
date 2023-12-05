@@ -73,7 +73,8 @@ cursor: pointer;
     padding: 10px;
 position: relative;
 width: 16rem;
-margin-right: 6rem;
+margin-right: 2rem;
+top:-0.4rem
 
 }
 .search-text{
@@ -83,6 +84,31 @@ margin-right: 6rem;
     width: 16rem;
     font-size: 13px;
 }
+
+.log{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-right: 20px;
+    font-size: 30px;
+    margin-top: -1rem; 
+ }
+  
+  .log .fa-user:hover{
+    color: rgb(162,210,255);
+  }
+  
+  .log .fa-heart:hover{
+    color: rgb(247,37,133);
+  }
+  
+  .log .fa-heart:hover{
+    color: rgb(247,37,133);
+  }
+  
+  .log .fa-bag-shopping:hover{
+    color: rgb(77,25,77);
+  }
 .material-symbols-outlined{
     color: rgb(188,188,188);
     top: 1.2rem;
@@ -387,3 +413,24 @@ flex-direction: row;
     width: 90%;
     object-fit: cover;
 }
+
+.fa-facebook-f:hover{
+    color: rgb(8,102,255);
+    cursor: pointer;
+    }
+    .fa-twitter:hover{
+    color: rgb(29,161,242);
+    cursor: pointer;
+    }
+    .fa-instagram:hover{
+    color: rgb(247,120,67);
+    cursor: pointer;
+    }
+    .fa-youtube:hover{
+    color: rgb(255,0,0);
+    cursor: pointer;
+    }
+
+    .fa-brands{
+        color:#ffffff;
+        }
