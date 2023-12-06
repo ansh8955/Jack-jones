@@ -469,21 +469,6 @@ li {
   font-size: 30px;
 }
 
-.log .fa-user:hover{
-  color: rgb(162,210,255);
-}
-
-.log .fa-heart:hover{
-  color: rgb(247,37,133);
-}
-
-.log .fa-heart:hover{
-  color: rgb(247,37,133);
-}
-
-.log .fa-bag-shopping:hover{
-  color: rgb(77,25,77);
-}
 
 /* effects on image section 2................ */
 
@@ -491,7 +476,7 @@ li {
   transition: ease-in-out;
   /* border: 1px solid rgb(255,194,209); */
   overflow: hidden;
-  box-shadow: 10px 10px 10px 10px rgb(255,194,209);
+  /* box-shadow: 10px 10px 10px 10px rgb(255,194,209); */
 }
 
 .collection2:hover img{
@@ -502,7 +487,7 @@ li {
   transition: ease-in-out;
   /* border: 1px solid ; */
   overflow: hidden;
-  box-shadow: 10px 10px 10px 10px rgb(207,232,239);
+  /* box-shadow: 10px 10px 10px 10px rgb(207,232,239); */
 }
 
 .collection1:hover img{
@@ -513,7 +498,7 @@ li {
   transition: ease-in-out;
   /* border: 1px solid ; */
   overflow: hidden;
-  box-shadow: 10px 10px 10px 10px rgb(228,230,231);
+  /* box-shadow: 10px 10px 10px 10px rgb(228,230,231); */
 }
 
 .collection3:hover img{
@@ -523,13 +508,96 @@ li {
 .section4{
   width: 80%;
   margin-left: 90px;
-  box-shadow: 20px 20px 20px 20px rgb(202,240,248);
+  /* box-shadow: 20px 20px 20px 20px rgb(202,240,248); */
 }
 
 /* slider................... */
 
 .slider2 section{
   margin-left: 80px;
-  box-shadow: 20px 20px 20px 20px rgb(239,239,239);
+  /* box-shadow: 20px 20px 20px 20px rgb(239,239,239); */
 }
 
+
+/* making site responsive talet */
+
+@media screen and (max-width:768px){
+.collection2{
+    margin-right: 70px;
+  }
+
+}
+
+/* making site responsive mobile 425px */
+
+@media screen and (max-width:425px){
+  body{
+    width: 145vw;
+  }
+
+  .collection1 h2, a, h6 {
+    font-size: smaller;
+  }
+
+  .collection2 h2, a, h6 {
+    font-size: smaller;
+  }
+
+  .collection3 h2, a, h6 {
+    font-size: smaller;
+  }
+
+  .section3 h1{
+    font-size: small;
+    font-weight: bolder;
+  }
+
+  .section3 button{
+    width: 100px;
+    font-size: 16px;
+    height: 50px;
+  }
+
+  .section4{
+    padding: 0;
+    margin:0 auto;
+  }
+
+  .section5{
+    width: 100%;
+  }
+
+  .slider2 img{
+    width: 150px;
+    margin-right: 10px;
+  }
+  .iframee{
+    width: 100%;
+  }
+
+  .section4 img{
+    width: 150px;
+  }
+
+  .crousel{
+    width:420px;
+  }
+  }
+  
+  /* making site responsive mobile 375px */
+
+  @media screen and (max-width:375px){
+    body{
+      width: 163%;
+
+    }
+  }
+
+  /* making site responsive mobile 320px */
+
+  @media screen and (max-width:320px){
+    body{
+      width: 192%;
+
+    }
+  }
