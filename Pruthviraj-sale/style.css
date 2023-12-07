@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-body{
+/* body{
     width: 100%;
     height: 100%;
-}
+    font-family: "Italian Plate No2 Expanded", sans-serif;
+} */
 
 
   
@@ -24,8 +27,10 @@ body{
     top: 0;
     background: white;
     z-index: 500;
+
   }
-  
+
+ 
   .header .top-discount-tag a {
     text-decoration: none;
     color: #fff;
@@ -56,6 +61,7 @@ body{
     align-content: center;
     align-items: center;
     justify-content: space-between;
+    height: 70px;
   }
   .header .navbar .search-right {
     margin-top: 10px;
@@ -69,12 +75,13 @@ body{
     padding: 10px;
     position: relative;
     width: 16rem;
-    margin-right: 6rem;
+    margin-right: 2rem;
   }
   .search-text {
     padding: 0.8rem;
     border: 1px solid #d9d9d9;
     width: 16rem;
+    height: 41px;
   }
   .header .navbar .search-right .search i {
     top: 1.5rem;
@@ -90,6 +97,7 @@ body{
     align-items: center;
     justify-content: center;
     padding: 1px;
+    height: 45px;
   }
   .header .tabs ul {
     float: right;
@@ -107,6 +115,13 @@ body{
     font-weight: 800;
   }
 
+  .log{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-right: 20px;
+    font-size: 30px;
+  }
 /* .header{
     width: 100vw;
     height: 25vh;
@@ -639,3 +654,80 @@ body{
     color: black;
 }
   
+
+/* making site responsive */
+/* for talet 768px */
+@media  screen and (max-width: 768px) {
+  .search input, i{
+    visibility: hidden;
+  }
+  .jack-jones-img img{
+    width: 150px;
+    margin-left: 280px;
+    margin-top: 40px;
+  }
+
+  .tabs ul{
+    margin-bottom: 45px;
+  }
+  /* .product{
+    width: 150px;
+    margin-right: 49px;
+  } */
+
+  .proinfo{
+    margin-bottom: -36px;
+  }
+  .proinfo p{
+    font-size: 10px;
+  }
+
+  .proinfo h4{
+    visibility: hidden;
+  }
+
+  .footer{
+    width: 100%;
+    margin-top: 150px;
+  }
+}
+
+/* making responsive for size425px */
+
+@media screen and (max-width:425px) {
+  body{
+    width: 800px;
+  }
+  .jack-jones-img img{
+    width: 150px;
+  }
+
+  .topnav{
+    visibility: hidden;
+  }
+
+  #space{
+    margin-right: 80px;
+  }
+ 
+  .buying{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .proinfo{
+    margin-top: -10px;
+  }
+
+  .letsdo{
+    margin-bottom: -30px;
+  }
+
+  .outer img{
+    margin-right: 100px;
+  }
+
+  .itemslist {
+    width: 100%;
+  }
+}
