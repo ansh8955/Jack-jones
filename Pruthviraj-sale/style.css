@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap");
+
 *{
     margin: 0;
     padding: 0;
@@ -6,19 +7,12 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* body{
-    width: 100%;
-    height: 100%;
-    font-family: "Italian Plate No2 Expanded", sans-serif;
-} */
-
-
-  
   body {
     font-family: "Italian Plate No2 Expanded", sans-serif;
     position: relative;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
   }
   
   .header {
@@ -122,78 +116,15 @@
     margin-right: 20px;
     font-size: 30px;
   }
-/* .header{
-    width: 100vw;
-    height: 25vh;
-    background-color: rgb(223, 191, 191);
+.modicication{
+  display: none;
 }
-
-.navbar1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0,40,85);
-    height: 22%;
-    color: aliceblue;
-    text-align: center;
-    font-size: medium;
-    
-}
-
-.middlenav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(255,255,255);
-    height: 50%;
-    
-}
-
-.rightside{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.search{
-    display: flex;
-}
-.search input{
-    border: none;
-    margin-right: -2%;
-}
-
-.search .btn{
-    border: none;
-}
-
-.lastnav{
-    width: 100%;
-    height: 27%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.lastnav ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    gap: 8px;
-}
-
-.lastnav a{
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    font-size: small;
-} */
-
 
 .main{
     width: 100%;
     height: 100%;
     background-color: rgb(255,255,255);
+    margin-top: -10%;
 }
 
 .sidebar{
@@ -221,32 +152,16 @@
     display: flex ;
 }
 
-/* .itemslist {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    background-color: bisque;
-} */
-
-/* .rightsidee{
-    display: flex;
-    justify-content: center;
-} */
-
-/* .rightsidee p{
-    text-align: center;
-} */
-
-.proinfo{
+/* .proinfo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
-.letsdo{
+/* .letsdo{
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .letsdo{
     width: 75vw;
@@ -301,10 +216,6 @@
     flex-wrap: wrap;
 }
 
-/* .proimg img {
-    width: 80%;
-    position: relative;
-} */
 
 .itemslist{
     padding: 1%;
@@ -621,7 +532,161 @@
 
 /* footer.................................... */
 
-.footer {
+.footer{
+  background-color: rgb(0,40,85);
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+ 
+}
+.footer hr{
+
+  margin-top: 1rem;
+}
+
+.heading-footer {
+margin-left: 1rem;
+}
+
+.heading-footer h2{
+  font-size: 16px;
+  color: white;
+  padding-left: 1rem;
+  margin-top: 5rem;
+  padding:1rem;
+  
+}
+.para a{
+  color: blue;
+  text-decoration: none;
+
+}
+
+
+.para{
+  color: white;
+  font-size: 13px;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 20vh;
+  padding: 2rem;
+ 
+ 
+}
+
+
+.para ol{
+  padding: 1rem;
+}
+
+.para ol li{
+  padding: 0.2rem;
+}
+
+
+.para h2{
+  padding-bottom: 1rem;
+  
+}
+
+.para p{
+  margin-bottom: 1rem;
+}
+.footer .list{
+  margin-top: 0.8rem;
+  height: auto;
+  width: 100%;
+  background-color:rgb(0,40,85);
+  display: flex;
+
+}
+
+.footer .list .social-icon-bar{
+  width: 20%;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  background-color:rgb(0,40,85);
+  padding: 0.5rem;
+  height: 8rem;
+  
+display: flex;
+flex-direction: row;
+}
+.footer .list .social-icon-bar div{
+  width: 5%;
+  height: auto;
+  margin: 1rem;
+}
+.footer .list .social-icon-bar div p{
+  line-height: 40px;
+  color: #fff;
+  margin:0 4rem;
+}
+.fa-brands fa-facebook-f fa-fade{
+  cursor: pointer;
+}
+
+.list-items{
+  display: flex;
+  background-color:rgb(0,40,85);
+}
+
+.list-items .items{
+  width: 25%;
+  height: auto;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.list-items .items p{
+  width:10rem;
+  padding: 5%;
+  font-size: 11px;
+  margin: 5%;
+  color: #fff;
+
+}
+.chatbot{
+  width: 68px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  right: 1%;
+  bottom: 12%;
+  cursor: pointer;
+}
+.chatbot img{
+  border-radius: 50%;
+  width: 90%;
+  object-fit: cover;
+}
+
+.fa-facebook-f:hover{
+  color: rgb(8,102,255);
+  cursor: pointer;
+  }
+  .fa-twitter:hover{
+  color: rgb(29,161,242);
+  cursor: pointer;
+  }
+  .fa-instagram:hover{
+  color: rgb(247,120,67);
+  cursor: pointer;
+  }
+  .fa-youtube:hover{
+  color: rgb(255,0,0);
+  cursor: pointer;
+  }
+
+.fa-brands{
+    color:#ffffff;
+    }
+ 
+.list{
+  margin-right: 200px;
+}
+/* .footer {
     display: flex;
     justify-content: space-around;
     background-color: #002855;
@@ -633,7 +698,6 @@
   .socials {
     display: flex;
     gap: 50px;
-    /* margin-top: px; */
     color: white;
   }
   
@@ -652,82 +716,129 @@
 
   label {
     color: black;
-}
+} */
   
-
 /* making site responsive */
+
+/* for talet 1024pxpx */
+@media screen and (max-width: 1024px){
+
+  .header{
+    width: 150vw;
+  }
+
+ .tabs ul{
+  display: flex;
+  flex: none;
+ }
+
+ .main{
+  margin-top: -150px;
+  margin-bottom: 150px;
+  width: 151vw;
+ }
+}
+
 /* for talet 768px */
 @media  screen and (max-width: 768px) {
-  .search input, i{
+
+  body{
+    width: 100vw;
+  }
+
+  .header{
+    height: 30vh;
+  }
+
+  hr{
+    display: none;
+  }
+
+
+  .jack-jones-img a img{
+    margin-left: 457px;
+   }
+  
+  
+
+   .modicication{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 50px;
+   }
+
+   .modicication .menu img{
+    margin-top: -84px;
+   }
+
+
+  .tabs{
     visibility: hidden;
   }
-  .jack-jones-img img{
-    width: 150px;
-    margin-left: 280px;
-    margin-top: 40px;
+
+  .main{
+    margin-bottom: 100px;
+    /* margin-top: -150px; */
   }
 
-  .tabs ul{
-    margin-bottom: 45px;
-  }
-  /* .product{
-    width: 150px;
-    margin-right: 49px;
-  } */
-
-  .proinfo{
-    margin-bottom: -36px;
-  }
-  .proinfo p{
-    font-size: 10px;
-  }
-
-  .proinfo h4{
+  .search{
     visibility: hidden;
   }
 
-  .footer{
-    width: 100%;
-    margin-top: 150px;
+  .letsdo{
+    width: 900px;
+  }
+
+  .product{
+    width: 440px;
+  }
+
+  #side-menu{
+    width: 25vw;
+  }
+ 
+  #space{
+    width: 28vw;
   }
 }
 
 /* making responsive for size425px */
 
 @media screen and (max-width:425px) {
-  body{
-    width: 800px;
-  }
-  .jack-jones-img img{
-    width: 150px;
-  }
 
-  .topnav{
-    visibility: hidden;
-  }
+ .header{
+  width: 240%;
+ }
 
-  #space{
-    margin-right: 80px;
-  }
- 
-  .buying{
-    display: flex;
-    flex-wrap: wrap;
-  }
+ .jack-jones-img a img{
+  margin-top: 70px;
+  width: 250px;
+  margin-left: 400px;
+ }
 
-  .proinfo{
-    margin-top: -10px;
-  }
+ .log{
+  margin-left: 488px;
+  margin-top: -150px;
+  font-size: 50px;
+ }
 
-  .letsdo{
-    margin-bottom: -30px;
-  }
+ #side-menu{
+  display: none;
+ }
 
-  .outer img{
-    margin-right: 100px;
-  }
+ .letsdo{
+  display: flex;
+  flex-direction: column;
+ }
 
-  .itemslist {
-    width: 100%;
-  }
+ .product{
+  width: 400px;
+  margin-right: 50px;
+ }
+
+ .itemslist{
+  margin-left: 80px;
+ }
+
 }
+
