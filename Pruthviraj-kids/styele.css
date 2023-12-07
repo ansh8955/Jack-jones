@@ -107,6 +107,18 @@ body {
   font-weight: 800;
 }
 
+.chatbot{
+  width: 60px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 999;
+  right: 5%;
+  bottom: 10%;
+}
+.chatbot img{
+  border-radius: 50%;
+  width: 60px;
+}
 /* 
 .header{
     width: 100vw;
